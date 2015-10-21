@@ -35,6 +35,7 @@ service apache2 restart
 echo "mysql-server-5.6 mysql-server/root_password password ${DB_PASSWORD}" | debconf-set-selections
 echo "mysql-server-5.6 mysql-server/root_password_again password ${DB_PASSWORD}" | debconf-set-selections
 apt-get ${APT_OPTIONS} install mysql-server-5.6 mysql-client-5.6
+update-rc.d mysql defaults
 
 # PHP
 apt-get ${APT_OPTIONS} install php5 php5-cli php5-mysql php5-mcrypt libapache2-mod-php5
