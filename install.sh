@@ -10,6 +10,7 @@ sed -i -e 's@^AcceptEnv LANG@#AcceptEnv LANG@g' /etc/ssh/sshd_config
 service ssh restart
 
 # apt-get
+add-apt-repository -y ppa:ondrej/php5-5.6
 sed -i -e 's@//archive.ubuntu.com/@//jp.archive.ubuntu.com/@g' /etc/apt/sources.list
 apt-get ${APT_OPTIONS} update
 apt-get ${APT_OPTIONS} install pwgen
