@@ -1,6 +1,10 @@
 # vagrant-sandbox
 A PHP application development environment with Vagrant.
 
+ * Apache HTTP Server 2.4.x
+ * PHP 5.6.x from ppa:ondrej/php5-5.6
+ * MySQL Community Server 5.7.x from Oracle repository
+
 ## Getting Started
 ```bash
 git clone git@github.com:dit-rohm/vagrant-sandbox.git
